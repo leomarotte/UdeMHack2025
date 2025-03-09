@@ -48,7 +48,7 @@ user_input = st.text_input("Enter file number : ")
 # Upload l'image du MRI
 if user_input is not None :
      upload_file = st.file_uploader (
-          "Choisissez un fichier",
+          "Choose a file:",
           type=["png", "jpg", "jpeg"],
           accept_multiple_files = False   # upload une image à la fois
      )
@@ -105,6 +105,7 @@ if upload_file is not None :
     st.sidebar.write(" ")
     
     if st.sidebar.button("Save to patient's file"):
+          user_input = st.write(" ")
            # Créer une instance du patient
           patient = Patient(user_input, resultat_cancer, pourcentage_cancer, resultat_dementia, pourcentage_dementia,
                        resultat_parkinson, pourcentage_parkinson)
