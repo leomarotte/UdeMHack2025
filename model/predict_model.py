@@ -6,8 +6,8 @@ from keras.src.legacy.preprocessing import image
 IMAGE_SIZE = (224, 224)
 
 # Charger le modèle
-model = tf.keras.models.load_model("modele_cancer.h5")
-print("Modèle chargé depuis 'modele_cancer.h5'.")
+model = tf.keras.models.load_model("modele_cancer.keras")
+print("Modèle chargé depuis 'modele_cancer.keras'.")
 
 def predict_single_image(model, img_path):
     # Charger l'image, redimensionnée à la taille du réseau

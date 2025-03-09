@@ -84,5 +84,5 @@ print(f"Test Loss : {loss:.4f}")
 print(f"Test Accuracy : {accuracy:.4f}")
 
 # ========== Sauvegarde du modèle ==========
-model.save("modele_cancer.h5")
+model.save("modele_cancer.keras")
 print("Modèle sauvegardé dans 'modele_cancer.h5'.")
