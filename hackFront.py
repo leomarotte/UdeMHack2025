@@ -103,7 +103,6 @@ if upload_file is not None :
 
 
     st.sidebar.write(" ")
-    st.sidebar.button("Save to patient's file")
     
     if st.sidebar.button("Save to patient's file"):
            # Créer une instance du patient
